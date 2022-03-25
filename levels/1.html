@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Boogle Search - Online</title>
+        <script type="text/javascript" src="../pass.js"></script>
+        <script type="text/javascript" src="../getparams.js"></script>
+        <script type="text/javascript">
+// Main page script
+window.onload = function(){
+    console.log('DOM structure loaded')
+    var searchQuery = params.q;
+    var searchQuery = decodeURIComponent(searchQuery)
+    if (isparamnull(searchQuery)){
+        console.warn('Argument not given')
+    } else {
+        console.warn('Overwriting content with scripts is not recommended')
+        document.write('<!DOCTYPE html>\n<title>Boogle</title>\n<h1>Boogle Search: <xmp>' + searchQuery + '</xmp></h1>\n<div id="results_paragraph">No results found for ' + searchQuery + ', sorry.</div>')
+        /*
+        br = document.createElement('br')
+        document.body.appendChild(br)
+        finalElement = document.createElement('div')
+        finalElement.setAttribute('id', 'results_paragraph')
+        finalElement.innerHTML = 'No results found for ' + searchQuery + ', sorry.'
+        document.body.appendChild(finalElement)
+        */
+    }
+}
+/*
+    Hint:
+    <script>window.alert(1)
+*/
+        </script>
+    </head>
+    <body>
+        <h1>Welcome to Boogle, your best searcher-friend!</h1>
+        <form>
+            <input name="q" id="query" type="field" placeholder="Enter your query here"></input>
+            &nbsp;
+            <!-- &nbsp; is used to make
+            the button not being near the
+            search field. -->
+            <input type="submit" value="Search">
+        </form>
+    </body>
+</html>
