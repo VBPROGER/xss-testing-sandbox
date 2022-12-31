@@ -13,5 +13,6 @@ This is remake of the [Google XSS game](https://xss-game.appspot.com)! **Current
 - Bug finders
 - - There is no one yet. Help the project to be here!
 # Downloading
-Download the latest **.**`ZIP` version from releases or<br>
-download ZIP from **Code** -> **Download ZIP**.
+Download the latest **.**`ZIP` version from [releases](https://github.com/VBPROGER/xss-testing-sandbox/releases) or<br>
+download ZIP from **Code** -> **Download ZIP**.<br>
+Or use a [direct download link](https://github.com/VBPROGER/xss-testing-sandbox/archive/refs/heads/main.zip)
